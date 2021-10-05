@@ -4,13 +4,13 @@
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class SalesSeries {
-  final String year;
+  final String state;
   final int sales;
-  final charts.Color color;
+  final charts.Color barColor;
 
   SalesSeries({
-    required this.year,
+    required this.state,
     required this.sales,
-    required this.color,
+    required this.barColor,
   });
 }
