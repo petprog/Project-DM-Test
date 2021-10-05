@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 import 'package:test_project/models/sale.dart';
 import 'package:test_project/models/sales_series.dart';
 
+import 'widgets/loading_text.dart';
 import 'widgets/sales_chart.dart';
 import 'widgets/sales_list.dart';
 
@@ -108,14 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              _sales.isNotEmpty
-                  ? SalesList(data: _sales)
-                  : Container(
-                      height: 300,
-                      child: Center(
-                        child: Text("Loading..."),
-                      ),
-                    ),
+              _sales.isEmpty ? LoadingText() : SalesList(data: _sales),
               Row(
                 children: [
                   TextButton(
@@ -136,7 +130,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              SalesChart(data: dataBarChart),
+              dataBarChart.isEmpty
+                  ? LoadingText()
+                  : SalesChart(data: dataBarChart),
             ],
           ),
         ));
