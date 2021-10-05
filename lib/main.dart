@@ -5,10 +5,11 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:test_project/sale.dart';
-import 'package:test_project/sales_chart.dart';
-import 'package:test_project/sales_list.dart';
-import 'package:test_project/sales_series.dart';
+import 'package:test_project/models/sale.dart';
+import 'package:test_project/models/sales_series.dart';
+
+import 'widgets/sales_chart.dart';
+import 'widgets/sales_list.dart';
 
 void main() {
   runApp(MyApp());

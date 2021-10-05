@@ -1,9 +1,8 @@
+/// Created by Taiwo Farinu on 29-Sep-21
+
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
-import 'package:test_project/sales_series.dart';
-/**
- * Created by Taiwo Farinu on 29-Sep-21
- */
+import 'package:test_project/models/sales_series.dart';
 
 class SalesChart extends StatelessWidget {
   final List<SalesSeries> data;

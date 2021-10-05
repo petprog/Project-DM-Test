@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:test_project/sale.dart';
+/// Created by Taiwo Farinu on 30-Sep-21
 
-/**
- * Created by Taiwo Farinu on 30-Sep-21
- */
+
+import 'package:flutter/material.dart';
+import 'package:test_project/models/sale.dart';
 
 class SalesList extends StatelessWidget {
   final List<Sale> data;
@@ -32,4 +31,3 @@ class SalesList extends StatelessWidget {
     );
   }
 }
-

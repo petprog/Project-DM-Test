@@ -1,6 +1,4 @@
-/**
- * Created by Taiwo Farinu on 29-Sep-21
- */
+/// Created by Taiwo Farinu on 29-Sep-21
 class Sale {
   String orderId = '';
   String profit = '';
