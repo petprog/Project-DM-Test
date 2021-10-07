@@ -107,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text("Sales"),
         ),
         body: SingleChildScrollView(
+          padding: new EdgeInsets.all(4.0),
           child: Column(
             children: [
               _sales.isEmpty ? LoadingText() : SalesList(data: _sales),
